@@ -2,7 +2,7 @@
 script_path=$(dirname $(readlink -f "$0"))
 echo "当前脚本路径: $script_path"
 # 检查必要的模型文件
-model_path="/data/bigc-data/lsq/QAnything/bge-m3"
+model_path="/data/teco-data/QAnything/bge-m3"
 required_files=("config.json" "tokenizer.json" "tokenizer_config.json" "special_tokens_map.json")
 echo "检查模型文件..."
 for file in "${required_files[@]}"; do    
@@ -35,7 +35,7 @@ pip install -r requirements.txt
 # 数据集路径设置
 train_data_path="/data/teco-data/squad/qanything_train.jsonl"
 # 模型路径设置
-model_path="/data/bigc-data/lsq/QAnything/bge-m3"
+model_path="/data/teco-data/QAnything/bge-m3"
 
 # 训练参数配置
 log_file="$script_path/sdaa_train.log"

@@ -58,7 +58,7 @@ QAnything PDF解析模型使用 squad 数据集，该数据集为开源数据集
 
 2. 运行训练。该模型支持单机单卡。
     ```
-   python train.py --train_file /data/teco-data/squad/qanything_train.jsonl --model_name_or_path /data/bigc-data/lsq/QAnything/bge-m3 --output_dir ./outputs/emb_m3_sdaa --batch_size 6 --max_steps 100 --lr 1e-5 2>&1 |tee sdaa.log
+   python train.py --train_file /data/teco-data/squad/qanything_train.jsonl --model_name_or_path /data/teco-data/QAnything/bge-m3 --output_dir ./outputs/emb_m3_sdaa --batch_size 6 --max_steps 100 --lr 1e-5 2>&1 |tee sdaa.log
    ```
     更多训练参数参考 run_scripts/argument.py
 
